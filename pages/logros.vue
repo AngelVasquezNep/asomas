@@ -86,7 +86,8 @@
       border: 1px solid #00CDB3
       font-size: 1.2em
       transition: .3s
-
+      will-change: transform
+      
       &:hover
         transform: scale(1.01) translateY(-5px)
         box-shadow: 0 3px 10px 2px #9c9c9c

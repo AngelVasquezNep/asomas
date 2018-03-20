@@ -49,18 +49,23 @@
         .btn
           router-link(to='/apoyo') Quiero ver la magia
     
-    .item.mision-vision Misión | Visión  
-    .item.patrocinadores Patrocinadores  
+    .item.mision-vision
+      Mision
+    .item.patrocinadores
+      Patrocinadores  
+    .item.mision-vision
     
   
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Mision from '~/components/Mision.vue'
+import Patrocinadores from '~/components/Patrocinadores.vue'
 
 export default {
   name: "index",
-  components: { AppLogo },
+  components: { AppLogo, Mision, Patrocinadores },
   methods: {
     
     
@@ -108,7 +113,6 @@ a
   display: grid
   grid-template-columns: repeat(4, 1fr)
   min-height: 100vh
-  grid-auto-rows: minmax(200px, min-content)
   justify-content: center
   overflow-x: hidden
 
@@ -227,6 +231,13 @@ a
   &:hover
     transform: translateY(-5px)
     box-shadow: 0 3px 10px 2px #9c9c9c
+
+.mision-vision
+  grid-column: 1 / -1
+
+.patrocinadores
+  grid-column: 1 / -1
+
 
 
 .btn

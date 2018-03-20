@@ -17,11 +17,11 @@
         li.centrar
           router-link.centrar( to="/apoyo") Apoyo
         li.centrar
-          a.centrar(href='#') Beneficiarios 
+          router-link.centrar( to="/beneficiarios") Beneficiarios 
         li.centrar
           a.centrar(href='#') Galeria
         li.centrar
-          a.centrar( @click="onScroll('contacto')" @click.self.prevent, href='#contacto') Contacto
+          a.centrar( @click="onScroll('contacto')", @click.self.prevent, href='#contacto') Contacto
 
 
 </template>
@@ -79,13 +79,13 @@
       right: 0 
       bottom: 0 
       grid-template-columns: 1fr 
-      background-color: rgba(100,200,200,.9) 
+      background-color: rgba(0,0,0,0) 
       z-index: 100 
       transform: translateX(-100%)
-      transition: .5s
+      transition: 1s
   a
+    color: rgba(2, 109, 95, 0.9)    
     width: 100%
-    color: rgba(2, 109, 95, 0.9)
     text-decoration: none
     height: 100%
   li
@@ -105,10 +105,12 @@
       display: grid
       text-align: center
       vertical-align: middle
-    
+      
   
   .visible
-    // transition: .5s
+    display: grid
+    transition: .5s
+    background-color: #fff
     transform: translateX(0)
 
 </style>
