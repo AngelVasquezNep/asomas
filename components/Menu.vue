@@ -19,7 +19,7 @@
         li.centrar
           router-link.centrar( to="/beneficiarios") Beneficiarios 
         li.centrar
-          a.centrar(href='#') Galeria
+          router-link.centrar( to="/galeria") Galeria 
         li.centrar
           a.centrar( @click="onScroll('contacto')", @click.self.prevent, href='#contacto') Contacto
 
