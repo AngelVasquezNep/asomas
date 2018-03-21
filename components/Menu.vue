@@ -3,7 +3,7 @@
     nav
       .menu-responsive(@click="toggle")
         p Menu
-      ul(:class="{ visible: toggable }")
+      ul(:class="{ visible: toggable }", @click="salir")
         li.centrar
           router-link.centrar( to="/") Inicio
         li.centrar
@@ -45,6 +45,9 @@
       toggle(){
         console.log(this.toggable)
         this.toggable ? this.toggable = false : this.toggable = true
+      },
+      salir(){
+        this.toggable = false
       }
     }
   }
@@ -61,6 +64,7 @@
   height: 50px
   font-weight: 600
   z-index: 10
+
   nav
     width: 100%
     height: 50px
@@ -72,17 +76,16 @@
     @media screen and (max-width: 770px)
       display: grid
       position: fixed
-      height: calc(100vh - 50px)
-      width: 100%
+      height: calc(100vh-50px)
       top: 50px 
       left: 0 
       right: 0 
       bottom: 0 
       grid-template-columns: 1fr 
-      background-color: rgba(0,0,0,0) 
       z-index: 100 
       transform: translateX(-100%)
       transition: 1s
+      z-index: 20
   a
     color: rgba(2, 109, 95, 0.9)    
     width: 100%
@@ -110,7 +113,10 @@
   .visible
     display: grid
     transition: .5s
-    background-color: #fff
+    background-color: rgba(0, 0, 0, .7)
     transform: translateX(0)
-
+    a
+      color: #fff
+    &:active
+      background-color: rgba(2, 109, 95, 0.9)
 </style>

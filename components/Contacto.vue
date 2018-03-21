@@ -78,7 +78,6 @@
     grid-gap: 20px
     .contacto-frase
       transform: rotate(0)
-
     .design-by
       grid-column: 1
       padding: 10px 0
@@ -86,5 +85,13 @@
       .logoface
         width: 30%
 
+  @media screen and (max-width: 500px)
+    .mapa-google
+      iframe
+        width: 400px
+  @media screen and (max-width: 400px)
+    .mapa-google
+      iframe
+        width: 300px
 
 </style>

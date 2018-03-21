@@ -192,7 +192,7 @@ a
   grid-column: 1 / -1
   padding: 40px 10px
   display: grid
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px
   justify-content: center
   justify-items: center
