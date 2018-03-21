@@ -94,6 +94,7 @@
   #apoyo
     line-height: 35px
     color: #363636
+    margin-bottom: 40px
   li
     list-style: none
   hgroup

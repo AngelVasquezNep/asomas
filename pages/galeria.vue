@@ -40,6 +40,8 @@
 </script>
 
 <style lang="sass" scoped>
+#galeria
+  margin-bottom: 40px  
 .container
   display: grid
   grid-template-columns: repeat(auto-fill, 200px)

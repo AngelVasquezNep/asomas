@@ -21,7 +21,7 @@
           img.logoface(src="~/assets/facebook.svg")
       .centrar.design-by
         p Diseñado por Ángel Vásquez 
-        a.centrar(href="https://www.github.com/angelvasqueznep" target="_blank") 
+        a.centrar(href="https://www.github.com/angelvasqueznep/asomas" target="_blank") 
           p Github 
             img.github(src="~/assets/github.svg")
 </template>

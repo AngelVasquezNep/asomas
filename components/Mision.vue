@@ -18,7 +18,14 @@
 
 <style lang="sass" scoped>
 #mision
-  line-height: 35px
-  margin: 20px 0
+  line-height: 45px
+  margin-top: 30px
+  width: 80%
+  
+  h2
+    background-color: #FFA500
+    color: #fff
+    padding: 15px 0
+    margin: 10px auto
 
 </style>
