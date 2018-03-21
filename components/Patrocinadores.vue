@@ -6,46 +6,46 @@
       ul
         li
           picture
-            img( src="~/assets/patrocinadores/camsa.png", alt="Camsa")
+            img( src="~/assets/patrocinadores/camsa.png", title="Camsa" ,alt="Camsa")
         li
           picture
-            img( src="~/assets/patrocinadores/casamaria.png", alt="Casa Maria")
+            img( src="~/assets/patrocinadores/casamaria.png", title="Casa Maria" ,alt="Casa Maria")
         li
           picture
-            img( src="~/assets/patrocinadores/casanovarent.jpg", alt="casanovarent")
+            img( src="~/assets/patrocinadores/casanovarent.jpg", title="casanovarent" ,alt="casanovarent")
         li
           picture
-            img( src="~/assets/patrocinadores/grupopakar.svg", alt="grupopakar")
+            img( src="~/assets/patrocinadores/grupopakar.svg", title="grupopakar" ,alt="grupopakar")
         li
           picture
-            img( src="~/assets/patrocinadores/invex.png", alt="Invex")
+            img( src="~/assets/patrocinadores/invex.png", title="Invex" ,alt="Invex")
         li
           picture
-            img( src="~/assets/patrocinadores/kesmeralda.png", alt="kesmeralda")
+            img( src="~/assets/patrocinadores/kesmeralda.png", title="kesmeralda" ,alt="kesmeralda")
         li
           picture
-            img( src="~/assets/patrocinadores/KPMG.png", alt="KPMG")
+            img( src="~/assets/patrocinadores/KPMG.png", title="KPMG" ,alt="KPMG")
         li
           picture
-            img( src="~/assets/patrocinadores/mahen.png", alt="Mahen")
+            img( src="~/assets/patrocinadores/mahen.png", title="Mahen" ,alt="Mahen")
         li
           picture
-            img( src="~/assets/patrocinadores/movistar.png", alt="Movistar")
+            img( src="~/assets/patrocinadores/movistar.png", title="Movistar" ,alt="Movistar")
         li
           picture
-            img( src="~/assets/patrocinadores/nmp.png", alt="NMP")
+            img( src="~/assets/patrocinadores/nmp.png", title="NMP" ,alt="NMP")
         li
           picture
-            img( src="~/assets/patrocinadores/perkins.png", alt="Perkins")
+            img( src="~/assets/patrocinadores/perkins.png", title="Perkins" ,alt="Perkins")
         li
           picture
-            img( src="~/assets/patrocinadores/proteccion.png", alt="Proteccion")
+            img( src="~/assets/patrocinadores/proteccion.png", title="Proteccion" ,alt="Proteccion")
         li
           picture
-            img( src="~/assets/patrocinadores/rich.png", alt="Rich")
+            img( src="~/assets/patrocinadores/rich.png", title="Rich" ,alt="Rich")
         li
           picture
-            img( src="~/assets/patrocinadores/sas.jpg", alt="SAS")
+            img( src="~/assets/patrocinadores/sas.jpg", title="SAS" ,alt="SAS")
 
 
 </template>
@@ -67,17 +67,23 @@
   margin: 20px 0
   font-size: 2em
 
+
 .slider 
   width: 100%
   margin: 0
   // overflow: hidden
   background-color: rgb(0, 149, 183)
   width: 1400% 
+
+  &:hover ul
+    animation-play-state: paused
+
 .slider ul 
   display: flex
   padding: 0
 
   animation: cambio 40s infinite alternate linear
+
 
 
 .slider li 

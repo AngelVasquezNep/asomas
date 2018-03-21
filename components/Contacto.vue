@@ -1,7 +1,7 @@
 <template lang="pug">
   #contacto.item.centrar.contacto
       .mapa-google
-        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.4652477523!2d-99.20694841968754!3d19.450551424528683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2023beac1c209%3A0x81ffd020bdf89566!2sAsomas!5e0!3m2!1ses-419!2smx!4v1519986215454', width='400', height='300', frameborder='0', style='border:0', allowfullscreen='')
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.4652477523!2d-99.20694841968754!3d19.450551424528683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2023beac1c209%3A0x81ffd020bdf89566!2sAsomas!5e0!3m2!1ses-419!2smx!4v1519986215454', width='500', height='300', frameborder='0', style='border:0', allowfullscreen='')
       h3.centrar.contacto-frase Siempre puedes contar con nosotros
       .centrar.telefonos
         p
@@ -73,10 +73,18 @@
     .github
       width: 20px
 
-  @media screen and (max-width: 770px)
+  @media screen and (max-width: 870px)
     grid-template-columns: 2fr
+    grid-gap: 20px
     .contacto-frase
       transform: rotate(0)
+
     .design-by
       grid-column: 1
+      padding: 10px 0
+    .facebook
+      .logoface
+        width: 30%
+
+
 </style>

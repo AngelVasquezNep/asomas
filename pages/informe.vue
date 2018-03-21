@@ -192,13 +192,15 @@
   grid-template-columns: 1fr auto
   align-items: none
   width: 70%
+  @media screen and (max-width: 768px)
+    width: 95%
   h2
     background-color: #FF003C
     color: #fff
     grid-column: 1 / -1
-    padding: 10px
+    padding: 10px 0
   p 
-    padding: 3px
+    padding: 3px 0
 
 .organigrama-content
   padding: 20px 0

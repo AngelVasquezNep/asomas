@@ -15,4 +15,6 @@
 <style lang="sass" scoped>
   #calendario
     color: #515151
+    img
+      width: 100%
 </style>

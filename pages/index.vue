@@ -107,7 +107,10 @@ a
 
 
 .logo
+  width: 100%
   margin: 80px 0 30px 0
+  img
+    width: 100%
 
 .container
   display: grid
@@ -115,7 +118,21 @@ a
   min-height: 100vh
   justify-content: center
   overflow-x: hidden
-
+  @media screen and (max-width: 768px)
+    grid-template-columns: 1fr 1fr
+    .mensaje-portada, .video, .logros-principales, .valores
+      grid-column: 1 / -1
+    .video
+      width: 80%
+      margin: auto
+    .fotos-principales
+      grid-template-columns: 1fr 1fr
+    .logros-principales
+      padding: 20px
+      margin: 20px 0
+  @media screen and (max-width: 544px)
+    .fotos-principales
+      grid-template-columns: 1fr 
 
 .item
   display: flex
@@ -164,7 +181,7 @@ a
     transform: rotate(-1deg)
 
 .banner
-  grid-column: 1 / span 4
+  grid-column: 1 / -1
   width: 100%
   .imagen-banner
     width: 100%
@@ -256,6 +273,10 @@ a
     font-size: 1.3em
     width: 100%
     height: 100%
+  &:hover
+    background-color: var(--red-color)
+    a
+      color: #fff
   &:active
     transform: scale(0.98)
 

@@ -64,17 +64,25 @@ export default {
     font-size: 1.2em
     line-height: 45px
     font-family: 'Montserrat', sans-serif
-
+    h1 
+      margin: 30px 0
     .programas-lista
       list-style: none
-      padding: 3em
-
+      padding: 0 3em 
+      line-height: 35px
       .lista
         display: grid
         margin: 10px 0
         align-items: center
         grid-template-columns: 1fr 1fr
+        @media screen and (max-width: 768px)
+          &:nth-of-type(2n)
+          grid-template-areas: "titulo" "img" "descripcion" !important
+          grid-template-columns: 1fr !important
+
+      
         
+
         h2
           padding: 10px
           color: #fff

@@ -35,7 +35,10 @@
   @keyframes apper 
     0%
       opacity: 0
-
+  @media screen and (max-width: 768px)
+    grid-template-columns: 1fr
+    .subtitulo
+      padding: 10px 0
 
   ul
     list-style: none
@@ -43,12 +46,14 @@
     &:hover
       background-color: #FF003C
       color: #fff
+      cursor: pointer
+      user-select: none
   h1
     background-color: #00CDB3
     color: #fff
     width: 100%
     padding: 40px 0
-    grid-column: span 2
+    grid-column: 1 / -1
   .subtitulo
     color: #fff
     background-color: #FFA500
