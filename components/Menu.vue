@@ -43,7 +43,6 @@
         })
       },
       toggle(){
-        console.log(this.toggable)
         this.toggable ? this.toggable = false : this.toggable = true
       },
       salir(){

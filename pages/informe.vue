@@ -201,7 +201,18 @@
     padding: 10px 0
   p 
     padding: 3px 0
+  @media screen and (max-width: 544px)
+    grid-template-columns: 1fr
+    p
+      &:nth-of-type(2n+1)
+        margin-top: 15px
+        font-size: 1.1em
 
+      &:nth-of-type(2n)
+        color: #FF003C
+        padding: 0
+        line-height: 5px
+        font-size: .9em
 .organigrama-content
   padding: 20px 0
   h2

@@ -130,9 +130,16 @@ a
     .logros-principales
       padding: 20px
       margin: 20px 0
+    .mensaje-motivacion
+      font-size: 2.5em
   @media screen and (max-width: 544px)
     .fotos-principales
       grid-template-columns: 1fr 
+    .video 
+      width: 95%
+    .banner
+      img
+        width: 100% !important
 
 .item
   display: flex

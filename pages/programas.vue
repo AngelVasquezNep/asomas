@@ -70,6 +70,8 @@ export default {
       list-style: none
       padding: 0 3em 
       line-height: 35px
+      @media screen and (max-width: 600px)
+        padding: 10px
       .lista
         display: grid
         margin: 10px 0
