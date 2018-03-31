@@ -68,9 +68,9 @@ export default {
   components: { AppLogo, Mision, Patrocinadores },
   methods: {
     
-    
   }
 }
+
 </script>
 
 <style lang="sass" scoped>

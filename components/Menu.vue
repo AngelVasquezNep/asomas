@@ -48,6 +48,11 @@
       salir(){
         this.toggable = false
       }
+    },
+    
+    created () {
+      this.$bus.$on('izDer', (ev) => this.toggable = false )
+      this.$bus.$on('derIz', (ev) => this.toggable = true )
     }
   }
 </script>
