@@ -39,8 +39,6 @@ module.exports = {
   // Plugins
 
   plugins: [
-    {src: '~/plugins/touch.js', ssr: false },
-    '~/plugins/eventBus.js'
   ]
 
 }
