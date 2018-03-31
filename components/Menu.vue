@@ -51,7 +51,10 @@
     },
     
     created () {
-      this.$bus.$on('izDer', (ev) => this.toggable = false )
+      this.$bus.$on('izDer', (ev) => {
+        this.toggable = false
+        console.log(ev)
+      })
       this.$bus.$on('derIz', (ev) => this.toggable = true )
     }
   }
