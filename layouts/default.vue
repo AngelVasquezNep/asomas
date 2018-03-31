@@ -1,5 +1,5 @@
 <template>
-  <v-touch @swipeleft="swipeleft" @swiperight="swiperight">
+  <v-touch class="touch" @swipeleft="swipeleft" @swiperight="swiperight">
     <myMenu />
     <nuxt class="mynuxt"/>
     <myContacto/>
@@ -40,5 +40,7 @@
   text-align: center
   flex-direction: column
 
+.touch
+  display: block !important
 
 </style>
