@@ -35,7 +35,24 @@
 
 <script>
   export default {
-    name: "Galeria"
+    name: "Galeria",
+
+    data() {
+      return {
+        rezised: 0,
+        title: "Asomas | Galeria",
+        description: "Galeria de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    }
+
   }
 </script>
 

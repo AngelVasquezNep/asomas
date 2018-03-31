@@ -53,7 +53,16 @@ export default {
     name: "Programas",
     data() {
       return {
-        
+        title: "Asomas | Programas y servicios",
+        description: "Programas y servicios de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
       }
     }
   }

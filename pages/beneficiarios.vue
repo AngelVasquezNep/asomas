@@ -19,12 +19,30 @@
 
 <script>
   export default {
-    name:"Beneficiarios"
+    name:"Beneficiarios",
+
+    data() {
+      return {
+        rezised: 0,
+        title: "Asomas | Beneficiarios",
+        description: "Beneficiarios de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    }
+
   }
 </script>
 
 <style lang="sass" scoped>
 #beneficiarios
+  user-select: none
   display: grid
   line-height: 30px
   margin-bottom: 30px
@@ -43,11 +61,11 @@
   ul
     list-style: none
   li
+    user-select: none
     &:hover
       background-color: #FF003C
       color: #fff
       cursor: pointer
-      user-select: none
   h1
     background-color: #00CDB3
     color: #fff

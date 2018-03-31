@@ -66,8 +66,21 @@ import Patrocinadores from '~/components/Patrocinadores.vue'
 export default {
   name: "index",
   components: { AppLogo, Mision, Patrocinadores },
-  methods: {
-    
+  
+  data() {
+    return {
+      title: "Asomas ",
+      description: "Home de Asomas"
+    }
+  },
+  
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.description }
+      ]
+    }
   }
 }
 

@@ -8,7 +8,23 @@
 
 <script>
   export default {
-    name: "Calendario"
+    name: "Calendario",
+
+    data() {
+      return {
+        title: "Asomas | Calendario",
+        description: "Calendario de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    }
+
   }
 </script>
 

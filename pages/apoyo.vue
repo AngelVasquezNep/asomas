@@ -86,7 +86,24 @@
 
 <script>
   export default {
-    name: "Apoyo"
+    name: "Apoyo",
+
+    data() {
+      return {
+        rezised: 0,
+        title: "Asomas | Apoyo",
+        description: "Apoyo para Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    }
+
   }
 </script>
 

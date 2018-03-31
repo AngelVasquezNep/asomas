@@ -43,7 +43,22 @@
 
 <script>
   export default {
-    name: "Logros"
+    name: "Logros",
+
+    data() {
+      return {
+        title: "Asomas | Logros",
+        description: "Logros de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    }
   }
 </script>
 
@@ -87,6 +102,7 @@
       font-size: 1.2em
       transition: .3s
       will-change: transform
+      user-select: none
       
       &:hover
         transform: scale(1.01) translateY(-5px)

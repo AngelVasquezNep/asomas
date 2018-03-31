@@ -82,31 +82,31 @@
         .organigrama(v-show="rezised>=960")
             ul
               li
-                a(href='#') Asamblea General de Asociados
+                span.content-organigrama Asamblea General de Asociados
                 ul
                   li
-                    a(href='#') Patronato
+                    span.content-organigrama Patronato
                     ul
                       li
-                        a(href='#') Dirección General
+                        span.content-organigrama Dirección General
                     
                         ul
                           li
-                            a(href='#') Coordinación de Procuración de fontos
+                            span.content-organigrama Coordinación de Procuración de fontos
                           li
-                            a(href='#') Coordinación Academica
+                            span.content-organigrama Coordinación Academica
 
                             ul
                               li
-                                a(href='#') Terapia fisica
+                                span.content-organigrama Terapia fisica
                               li
-                                a(href='#') Especialistas
+                                span.content-organigrama Especialistas
                               li
-                                a(href='#') Trabajo Social
+                                span.content-organigrama Trabajo Social
                               li
-                                a(href='#') Psicólogia
+                                span.content-organigrama Psicólogia
                           li
-                            a(href='#') Asistente
+                            span.content-organigrama Asistente
         .organigrama-img(v-show="rezised<960")
           figure
             img(src="~/assets/organigrama.png")
@@ -136,19 +136,32 @@
 <script>
   export default {
     name:"Informe",
-    data(){
-      return {
-        rezised: 0,
+    
+    methods: {
+      resise(){
+        this.rezised = window.innerWidth
       }
     },
+
     mounted: function () {
       window.addEventListener('resize', (event)=>{
         this.resise()
       })
     },
-    methods: {
-      resise(){
-        this.rezised = window.innerWidth
+
+    data() {
+      return {
+        rezised: 0,
+        title: "Asomas | Informe",
+        description: "Informe de Asomas"
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: this.description }
+        ]
       }
     }
 
@@ -213,6 +226,7 @@
         padding: 0
         line-height: 5px
         font-size: .9em
+
 .organigrama-content
   padding: 20px 0
   h2
@@ -288,7 +302,7 @@
     height: 20px
   
 
-  .organigrama li a 
+  .organigrama li .content-organigrama 
     border: 2px solid #00CDB3
     padding: 1em 0.75em
     text-decoration: none
@@ -297,9 +311,10 @@
     display: inline-block
     border-radius: 5px
     transition: all .2s
+    user-select: none
   
 
-  .organigrama li a:hover 
+  .organigrama li .content-organigrama:hover 
     border: 1px solid #fff
     color: #fff
     background-color: #00CDB3
