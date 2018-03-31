@@ -21,6 +21,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [ 'vue-lazyload' ],
     /*
     ** Run ESLint on save
     */
@@ -39,6 +40,7 @@ module.exports = {
   // Plugins
 
   plugins: [
+    '~/plugins/lazy.js'
   ]
 
 }
