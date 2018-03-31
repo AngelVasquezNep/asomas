@@ -109,7 +109,7 @@
                             span.content-organigrama Asistente
         .organigrama-img(v-show="rezised<960")
           figure
-            img(src="~/assets/organigrama.png")
+            img(v-lazy="require('~/assets/organigrama.png')")
 
       
       .impactoSocial

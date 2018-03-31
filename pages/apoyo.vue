@@ -33,11 +33,11 @@
         h3 ARTÍCULOS DE LIMPIEZA
         ul
           li Cloro
-          img(src="~/assets/icons/mop.png")
+          img(v-lazy="require('~/assets/icons/mop.png')")
           li Pinol
           li Toallitas Desinfectantes
           li Limpiador de Vidrios
-          img(src="~/assets/icons/toilet-paper.png")
+          img(v-lazy="require('~/assets/icons/toilet-paper.png')")
           li Aromatizante en aerosol
 
       .item
@@ -46,7 +46,7 @@
           li Jabón líquido para manos
           li Toallitas húmedas
           li Toallas femeninas ultra delgadas y con alitas
-          img(src="~/assets/icons/soap.png")
+          img(v-lazy="require('~/assets/icons/soap.png')")
           li Pasta dental (suave)
           li Papel Sanitario
           li Crema Corporal
@@ -58,7 +58,7 @@
           li Papel Bond Colores
           li Plumas
           li Lápices
-          img(src="~/assets/icons/pencils.png")
+          img(v-lazy="require('~/assets/icons/pencils.png')")
           li Lápices de Colores
           li Resistol Blanco
           li Pritt
@@ -72,15 +72,15 @@
       .item
         h3 DONATIVOS CON CARGO DIRECTO A TARJETA DE CRÉDITO
         p Ponte en contacto con nosotros 
-        img(src="~/assets/icons/teamwork.png")
+        img(v-lazy="require('~/assets/icons/teamwork.png')")
       .item
         h3 VOLUNTARIADO
         p Apoyando directamente con tu tiempo y ayudando directamente en la rehabilitación de los niños y jóvenes. Puedes apoyar también con tus servicios profesionales (Apoyo administrativo, contable, mercadotecnia, diseño, sistemas, etc.).
-        img(src="~/assets/icons/volunteer.png")
+        img(v-lazy="require('~/assets/icons/volunteer.png')")
       .item
         h3 SERVICIO SOCIAL
         p Si estás acabando tu carrera y necesitas realizar tu servicio social, ponte en contacto con nosotros. Tenemos diferentes planes tanto presenciales como por proyectos. Estamos registrados ante varias universidades para la realización de servicio social de su alumnado.
-        img(src="~/assets/icons/babysitter.png")
+        img(v-lazy="require('~/assets/icons/babysitter.png')")
 
 </template>
 

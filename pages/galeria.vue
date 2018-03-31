@@ -2,35 +2,38 @@
   #galeria
     .container
       .item.level-2
-        img(src='~/assets/img1.jpg', alt='')
+        img(v-lazy="require('~/assets/img1.jpg')", alt='a')
       .item.level-2
-        img(src='~/assets/img3.jpg', alt='')
+        img(v-lazy="require('~/assets/img3.jpg')", alt='a')
       .item.level-2
-        img(src='~/assets/img1.jpg', alt='')
+        img(v-lazy="require('~/assets/img1.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img2.jpg', alt='')
+        img(v-lazy="require('~/assets/img2.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img5.jpg', alt='')
+        img(v-lazy="require('~/assets/img5.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img4.jpg', alt='')
+        img(v-lazy="require('~/assets/img4.jpg')", alt='a')
       .item.level-2
-        img(src='~/assets/logo.png', alt='')
+        img(v-lazy="require('~/assets/logo.png')", alt='a')
       .item.level-1
-        img(src='~/assets/img4.jpg', alt='')
+        img(v-lazy="require('~/assets/img4.jpg')", alt='a')
       .item.level-2
-        img(src='~/assets/logo.png', alt='')
+        img(v-lazy="require('~/assets/logo.png')", alt='a')
       .item.level-1
-        img(src='~/assets/img1.jpg', alt='')
+        img(v-lazy="require('~/assets/img1.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img2.jpg', alt='')
+        img(v-lazy="require('~/assets/img2.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img3.jpg', alt='')
+        img(v-lazy="require('~/assets/img3.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img4.jpg', alt='')
+        img(v-lazy="require('~/assets/img4.jpg')", alt='a')
       .item.level-1
-        img(src='~/assets/img5.jpg', alt='')
+        img(v-lazy="require('~/assets/img5.jpg')", alt='a')
       .item.level-2
-        img(src='~/assets/logo.png', alt='')
+        img(v-lazy="require('~/assets/logo.png')", alt='a')
+
+
+
 </template>
 
 <script>
