@@ -288,11 +288,11 @@ a
   li
     &:nth-of-type(2n - 1)
       transform: rotate(0.5deg)
-      color: var(--red-color)
+      color: rgb(66, 66, 66)
     &:nth-of-type(2n)
       transform: rotate(-0.5deg)
       color: #fff
-      background: rgba(178, 8, 201, 0.925)
+      background: var(--red-color)
   p
     font-size: 1.2em
     color: var(--second-color)
