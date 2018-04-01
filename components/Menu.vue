@@ -69,7 +69,7 @@
   z-index: 10
 
   .is-active
-    box-shadow: inset 0px 8px #00CDB3
+    box-shadow: inset 0px -5px #00CDB3
 
 
   nav
