@@ -6,7 +6,7 @@ module.exports = {
     title: 'Asomas',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1', userScalable:"no" },
       { hid: 'description', name: 'description', content: 'Web site for Asomas' }
     ],
     link: [
