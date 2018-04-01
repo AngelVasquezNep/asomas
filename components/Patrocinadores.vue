@@ -104,7 +104,7 @@
 @keyframes cambio 
   0% 
     margin-left: 0
-  5% 
+  2% 
     margin-left: 0
   
   // 20% 
@@ -117,7 +117,7 @@
   // 80% 
   //   margin-left: -20%
   
-  95% 
+  98% 
     margin-left: -24%
   100% 
     margin-left: -24%

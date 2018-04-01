@@ -262,11 +262,13 @@ a
     justify-content: space-evenly
     width: 90%
     grid-template-columns: repeat(auto-fill, 250px)
-    grid-gap: 20px
+    grid-gap: 25px
     transition: .2s
     // border: 1px solid var(--main-color)
+    
   h2
     font-size: 2em
+    margin: 20px auto
     color: var(--second-color)
   .valores-container:hover
     // box-shadow: 8px 8px var(--main-color)
