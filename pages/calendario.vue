@@ -35,6 +35,7 @@
 <style lang="sass" scoped>
   #calendario
     color: #515151
+    line-height: 50px
     img
       width: 100%
 </style>

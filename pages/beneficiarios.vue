@@ -76,6 +76,7 @@
     width: 100%
     padding: 40px 0
     grid-column: 1 / -1
+    margin-top: 10px
   .subtitulo
     color: #fff
     background-color: #FFA500
