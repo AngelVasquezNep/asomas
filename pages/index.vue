@@ -25,18 +25,41 @@
       img(src='~/assets/img3.jpg', alt='')
       img(src='~/assets/img4.jpg', alt='')
       img(src='~/assets/img5.jpg', alt='')
-    .item.valores.centrar
+    .item.valores
+      h2 Nuestros Valores
       .valores-container
-        h2 Nuestros Valores
-        ul.centrar
-          li  Respeto
-          li  Dignidad
-          li  Calidez
-          li  Familia
-          li  Aceptación
-          li  Colaboración
-          li  Honestidad
-          li  Transparencia.
+        Valores
+          img(slot="imagen" src="~/assets/valores/respeto.png", alt="respeto")
+          h3(slot="title") Respeto
+          p(slot="description") Respeto a la dignidad de las personas con discapacidad y sus familias.
+        Valores
+          img(slot="imagen" src="~/assets/valores/dignidad.png", alt="dignidad")
+          h3(slot="title") Dignidad
+          p(slot="description") Dignidad para cada ser humano.
+        Valores
+          img(slot="imagen" src="~/assets/valores/calidez.png", alt="calidez")
+          h3(slot="title") Calidez
+          p(slot="description") Calidad y calidez de la atención.
+        Valores
+          img(slot="imagen" src="~/assets/valores/integracio.png", alt="familia")
+          h3(slot="title") Integración
+          p(slot="description") Integración del alumno y la familia por medio de oportunidades y experiencias funcionales. 
+        Valores
+          img(slot="imagen" src="~/assets/valores/aceptacion.png", alt="aceptacion")
+          h3(slot="title") Aceptación
+          p(slot="description") Aceptación de diferentes ideologías, religiones, sexos, razas o grupos sociales.
+        Valores
+          img(slot="imagen" src="~/assets/valores/colaboracion.png", alt="colaboracion")
+          h3(slot="title") Colaboración
+          p(slot="description") Colaboración con otras instituciones con objetivos afines en beneficio de las personas con sordoceguera y/o retos múltiples.
+        Valores
+          img(slot="imagen" src="~/assets/valores/honestidad.png", alt="honestidad")
+          h3(slot="title") Honestidad
+          p(slot="description") Honestidad para cada miembro de Asomas y del mundo.
+        Valores
+          img(slot="imagen" src="~/assets/valores/transparencia.png", alt="transparencia")
+          h3(slot="title") Transparencia
+          p(slot="description") Transparencia en cada acto y decisión.
     .item.centrar.logros-principales
       .logros-principales-container
         h2 Enterate de algunos de nuestros logros 
@@ -62,10 +85,11 @@
 import AppLogo from '~/components/AppLogo.vue'
 import Mision from '~/components/Mision.vue'
 import Patrocinadores from '~/components/Patrocinadores.vue'
+import Valores from '~/components/Valores.vue'
 
 export default {
   name: "index",
-  components: { AppLogo, Mision, Patrocinadores },
+  components: { AppLogo, Mision, Patrocinadores, Valores },
   
   data() {
     return {
@@ -224,28 +248,35 @@ a
 
 .valores
   font-size: 1.1em
-  display: block
   line-height: 55px
   font-weight: bold
   box-sizing: border-box
-  ul
-    display: block
+  grid-column: 1 / -1
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin: 10px
   .valores-container
+    padding: 10px
+    display: grid
+    justify-content: space-evenly
+    width: 90%
+    grid-template-columns: repeat(auto-fill, 250px)
+    grid-gap: 20px
     transition: .2s
-    margin: 0 10px
-    height: 100%
-    border: 1px solid var(--main-color)
+    // border: 1px solid var(--main-color)
   h2
     font-size: 2em
     color: var(--second-color)
   .valores-container:hover
-    box-shadow: 8px 8px var(--main-color)
+    // box-shadow: 8px 8px var(--main-color)
 
 .logros-principales
-  grid-column: span 3
+  grid-column: 1 / -1
   font-size: 1.29em
   line-height: 50px
   transition: .3s
+  margin: 10px
   .centrar
     flex-direction: column
   h2
