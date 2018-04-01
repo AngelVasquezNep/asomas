@@ -4,21 +4,21 @@
       .menu-responsive(@click="toggle")
         p Menu
       ul(:class="{ visible: toggable }", @click="salir")
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'index' === actived }")
           router-link.centrar( to="/") Inicio
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'programas' === actived }")
           router-link.enlace.centrar(to="/programas") Programas
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'logros' === actived }")
           router-link.centrar( to="/logros") Logros
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'calendario' === actived }")
           router-link.centrar( to="/calendario") Calendario
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'informe' === actived }")
           router-link.centrar( to="/informe") Informe
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'apoyo' === actived }")
           router-link.centrar( to="/apoyo") Apoyo
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'beneficiarios' === actived }")
           router-link.centrar( to="/beneficiarios") Beneficiarios 
-        li.centrar
+        li.centrar(:class="{ 'is-active': 'galeria' === actived }")
           router-link.centrar( to="/galeria") Galeria 
         li.centrar
           a.centrar( @click="onScroll('contacto')", @click.self.prevent, href='#contacto') Contacto
@@ -31,7 +31,8 @@
     name: "myMenu",
     data(){
       return {
-        toggable: false
+        toggable: false,
+        actived: ''
       }
     },
     methods: {
@@ -48,6 +49,9 @@
       salir(){
         this.toggable = false
       }
+    },
+    created () {
+      this.$bus.$on('menu', (data) => this.actived = data )
     }
   }
 </script>
@@ -63,6 +67,10 @@
   height: 50px
   font-weight: 600
   z-index: 10
+
+  .is-active
+    box-shadow: inset 0px 8px #00CDB3
+
 
   nav
     width: 100%
@@ -94,7 +102,6 @@
     transition: .3s
     &:hover
       box-shadow: inset 0px -5px #00CDB3
-  
 
   .menu-responsive
     display: none

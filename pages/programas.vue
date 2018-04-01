@@ -64,7 +64,12 @@ export default {
           { hid: 'description', name: 'description', content: this.description }
         ]
       }
+    },
+
+    mounted() {
+      this.$bus.$emit('menu', 'programas')
     }
+
   }
 </script>
 

@@ -147,6 +147,7 @@
       window.addEventListener('resize', (event)=>{
         this.resise()
       })
+      this.$bus.$emit('menu', 'informe')
     },
 
     data() {

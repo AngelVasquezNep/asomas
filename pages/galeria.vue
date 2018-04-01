@@ -54,6 +54,10 @@
           { hid: 'description', name: 'description', content: this.description }
         ]
       }
+    },
+
+    mounted () {
+      this.$bus.$emit('menu', 'galeria')
     }
 
   }

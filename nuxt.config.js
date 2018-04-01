@@ -40,7 +40,8 @@ module.exports = {
   // Plugins
 
   plugins: [
-    '~/plugins/lazy.js'
+    '~/plugins/lazy.js',
+    '~/plugins/eventBus.js'
   ]
 
 }
