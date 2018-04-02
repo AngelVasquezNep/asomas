@@ -17,13 +17,13 @@
         | CP: 11220
         | RFC: AMA0111218G0
       .centrar.facebook
-        a.centrar(href="https://www.facebook.com/Asomas-IAP-127976263916799/" target="_blank") 
+        a.centrar(href="https://www.facebook.com/Asomas-IAP-127976263916799/", target="_blank") 
           img.logoface(src="~/assets/facebook.svg")
       .centrar.design-by
-        p Diseñado por Ángel Vásquez 
-        a.centrar(href="https://www.github.com/angelvasqueznep/asomas" target="_blank") 
-          p Github 
-            img.github(src="~/assets/github.svg")
+        a.mail(href="mailto:angel.vasquez.unam@gmail.com") Diseñado por Ángel Vásquez 
+        a(href="https://twitter.com/angelvasqueznep", target="_blank") @angelvasqueznep 
+        a.centrar(href="https://www.github.com/angelvasqueznep/asomas", target="_blank") 
+          img.github(src="~/assets/github.svg") 
 </template>
 
 <script>
@@ -64,14 +64,17 @@
       width: 60%
   .design-by
     font-size: 1.1em
-    color: #fff
     height: 100%
     grid-column: span 2
     background-color: #FF003C
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: repeat(4, 1fr)
+    align-items: center
+    .mail
+      color: #fff
+      grid-column: span 2
     .github
-      width: 20px
+      width: 30px
 
   @media screen and (max-width: 870px)
     grid-template-columns: 2fr
