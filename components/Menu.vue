@@ -66,7 +66,7 @@
   top: 0
   height: 50px
   font-weight: 600
-  z-index: 10
+  z-index: 20
 
   .is-active
     box-shadow: inset 0px -5px #00CDB3
