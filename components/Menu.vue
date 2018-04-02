@@ -66,7 +66,7 @@
   top: 0
   height: 50px
   font-weight: 600
-  z-index: 20
+  z-index: 10
 
   .is-active
     box-shadow: inset 0px -5px #00CDB3
@@ -80,6 +80,7 @@
     width: 100%
     display: grid
     grid-template-columns: repeat(9, minmax(max-content, 1fr))
+    z-index: 10
     @media screen and (max-width: 770px)
       display: grid
       position: fixed
