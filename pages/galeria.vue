@@ -1,11 +1,11 @@
 <template lang="pug">
   #galeria
     .container
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/img1.jpg')", alt='a')
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/img3.jpg')", alt='a')
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/img1.jpg')", alt='a')
       .item.level-1
         img(v-lazy="require('~/assets/img2.jpg')", alt='a')
@@ -13,11 +13,11 @@
         img(v-lazy="require('~/assets/img5.jpg')", alt='a')
       .item.level-1
         img(v-lazy="require('~/assets/img4.jpg')", alt='a')
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/logo.png')", alt='a')
       .item.level-1
         img(v-lazy="require('~/assets/img4.jpg')", alt='a')
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/logo.png')", alt='a')
       .item.level-1
         img(v-lazy="require('~/assets/img1.jpg')", alt='a')
@@ -29,7 +29,7 @@
         img(v-lazy="require('~/assets/img4.jpg')", alt='a')
       .item.level-1
         img(v-lazy="require('~/assets/img5.jpg')", alt='a')
-      .item.level-2
+      .item.level-1
         img(v-lazy="require('~/assets/logo.png')", alt='a')
 
 
