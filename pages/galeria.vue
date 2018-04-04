@@ -68,10 +68,14 @@
   margin-bottom: 40px  
 .container
   display: grid
-  grid-template-columns: repeat(auto-fill, 200px)
+  grid-template-columns: repeat(4, 1fr)
   grid-gap: 10px
   justify-content: center
   grid-auto-flow: dense
+  @media screen and (max-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+  @media screen and (max-width: 542px)
+    grid-template-columns: 1fr
 
 .item
   border-radius: 5px
