@@ -2,7 +2,7 @@
 .asomas
   #inicio.logo.centrar
     picture
-      img(src='~/assets/logo.png', alt='')
+      img(src='~/assets/logo.png', alt='Asomas')
   .container
     .item.portada.centrar
       h1.mensaje-portada ¡Asomate a su mundo y descubré todas las maravillas que existen!
