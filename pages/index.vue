@@ -22,8 +22,8 @@
       p ¡Vamos a cambiar el mundo con tu ayuda!
     .item.fotos-principales.centrar
       img(src='~/assets/img2.jpg', alt='')
-      img(src='~/assets/img3.jpg', alt='')
-      img(src='~/assets/img4.jpg', alt='')
+      img(src='~/assets/img7.jpg', alt='')
+      img(src='~/assets/img9.jpg', alt='')
       img(src='~/assets/img5.jpg', alt='')
     .item.valores
       h2 Nuestros Valores
@@ -217,7 +217,7 @@ a
   grid-column: span 2
   padding: 30px 0
   iframe
-    width: 100%
+    width: 90%
 
 .mensaje-motivacion
   height: 200px
