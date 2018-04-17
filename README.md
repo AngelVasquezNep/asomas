@@ -1,11 +1,23 @@
 # Asomas
 
-> Web site for Asomas
+> Página web para Asomas
 
 ASOMAS es una Institución de Asistencia Privada sin fines de lucro que tiene la misión de fomentar el desarrollo integral de personas sordociegas y/o con discapacidad múltiple.
 
-Me gusta que las personas buenas ayuden a otros, por ello ingrese a su página y me parecio que tenía varias áreas de oportunidad. Con ello en mente me di a la tarea de generar un nuevo sitio web para ellos con 💜.
+Me gusta que las personas buenas ayuden a otros, por ello ingrese a su página y me parecio que tenía varias áreas de oportunidad. Con ello en mente me di a la tarea de generar un nuevo sitio para ellos con 💜.
 
+
+![Asomas-1](https://raw.githubusercontent.com/AngelVasquezNep/asomas/master/assets/capturas/Asomas-1.png)
+
+-------
+
+![Asomas-2](https://raw.githubusercontent.com/AngelVasquezNep/asomas/master/assets/capturas/Asomas-2.png)
+
+--------
+
+![Asomas-3](https://raw.githubusercontent.com/AngelVasquezNep/asomas/master/assets/capturas/Asomas-3.png)
+
+--------
 
 ## Nuxt.js 🚀
 
@@ -32,7 +44,14 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+---------
 
-## Contacto
+### Autor
 
-Twitter [@angelvasqueznep](https://twitter.com/@angelvasqueznep)
+Mi nombre es Ángel Vásquez, desarrollador front end.
+
+🚀 Me gusta Vue y React.
+
+[GitHub](https://github.com/angelvasqueznep) 
+
+[Twitter](https://twitter.com/angelvasqueznep)
